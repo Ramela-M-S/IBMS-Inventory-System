@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Users{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center mb-4">Welcome, {{ current_user.username }}!</h2>
+
+<h3 class="mb-4">All Users</h3>
+
+<div class="row">
+    {% for user in users %}
+    <div class="col-md-4 mb-4">
+        <div class="card shadow-lg border-0" style="background-color:#1e1e1e; color:white; border-radius: 12px;">
+            <div class="card-body">
+                <h5 class="card-title">{{ user.username }}</h5>
+                <p class="card-text" style="color:#cccccc;">
+                    <strong>Email:</strong> {{ user.email }}
+                </p>
+
+                <span class="badge bg-info text-dark">
+                    User ID: {{ user.id }}
+                </span>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="text-center mt-4">
+    <a href="{{ url_for('logout_page') }}" class="btn btn-danger px-4">Logout</a>
+</div>
+
+{% endblock %}

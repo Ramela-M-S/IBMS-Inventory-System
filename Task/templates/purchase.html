@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}My Purchases{% endblock %}
+
+{% block content %}
+<h1>My Purchases</h1>
+
+<div class="row">
+    {% for purchase in purchases %}
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">Item: {{ purchase.item.item_name }}</h5>
+                <p class="card-text">
+                    Price: ₹{{ purchase.Tot_price / purchase.quantity }} <br>
+                    Quantity: {{ purchase.quantity }} <br>
+                    Total: ₹{{ purchase.Tot_price }}
+                </p>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <p>You have not purchased anything yet.</p>
+    {% endfor %}
+</div>
+{% endblock %}
+
