@@ -1,5 +1,6 @@
 # Inventory and Building Management System (IBMS)
 
+
 ## 📌 Project Description
 An **Inventory and Building Management System (IBMS)** developed using **Flask** and **Flask-SQLAlchemy** to manage inventory records, purchases, and billing efficiently. The system supports streamlined recordkeeping and resource allocation through a centralized management platform.
 
@@ -15,7 +16,7 @@ Streamlined inventory and billing workflows by providing an organized and effici
 ## 📸 Screenshots
 
 ### 🧾 Inventory & Billing Dashboard
-![Inventory & Billing Management System](screenshots/Inventory_Billing_Management_System.png)
+![Inventory & Billing Management System](screenshots/Inventory & Billing Management System.png)
 
 ### 🔐 Login Page
 ![Login Page](screenshots/Login_Page.png)
