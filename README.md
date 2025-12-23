@@ -16,7 +16,7 @@ Streamlined inventory and billing workflows by providing an organized and effici
 ## 📸 Screenshots
 
 ### 🧾 Inventory & Billing Dashboard
-![Inventory & Billing Management System](screenshots/Inventory & Billing Management System.png)
+![Inventory & Billing Management System](screenshots/ibms.png)
 
 ### 🔐 Login Page
 ![Login Page](screenshots/Login_Page.png)
